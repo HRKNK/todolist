@@ -1,0 +1,14 @@
+{
+	"trailingComma": "es5",
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true,
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"arrowParens": "always",
+	"singleAttributePerLine": false,
+	"printWidth": 150,
+	"importOrder": ["^app/styles", "^(app|entities|features|pages|shared|widgets)/(.*)$", "^[./]"],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}

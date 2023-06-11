@@ -1,0 +1,10 @@
+{
+	"presets": [
+		"@babel/preset-env",
+		"@babel/preset-typescript",
+		["@babel/preset-react", { "runtime": "automatic" }] // автоимпорт React в файл теста
+	],
+	"plugins": [
+		// […] your other plugins […]
+	]
+}

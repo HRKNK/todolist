@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/", // (Куда собрать TS)
+		"noImplicitAny": true, // any
+		"module": "esnext", // // require | import (ES6)
+		"target": "es5", // (стандарт компиляции)
+		"jsx": "react-jsx",
+		"allowJs": true, // Поддержка JS + TS. Полезно при постепенном переходе на TS
+		"strict": false, // Строгий режим
+		"moduleResolution": "node",
+		"esModuleInterop": true, // commonJS => import Moment from 'moment';
+		"allowSyntheticDefaultImports": true, // Для default import. import * as React from 'react'; => import React from 'react';
+		"isolatedModules": true, // https://www.typescriptlang.org/tsconfig#isolatedModules
+
+		"baseUrl": ".", // (базовый путей резолва)
+		"paths": {
+			// кастомные импорты
+			"*": ["./src/*"] //"@/*": ["./src/*"] c алиасом
+		}
+	},
+	"ts-node": {
+		// доп. настройка экспорта
+		"compilerOptions": {
+			"module": "CommonJS"
+		},
+		"include": [
+			"./config/jest/jest-setup.ts", // jest-dom
+			"./src/**/*.{tsx,ts}"
+		]
+	}
+}
